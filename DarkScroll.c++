@@ -1,26 +1,102 @@
 #include<iostream>
+#include<fstream>
 
 using namespace std;
 
-struct node{
+struct nodeL{
     int info;
-    node *dir, *esq;
+    nodeL *dir;
+};
+
+struct nodeA{
+    int info;
+    nodeA *dir, *esq;
 };
 
 class Arvore{
-  
     public:
-    node *raiz;
+    nodeA *raiz;
     Arvore(){
         raiz = nullptr;
     }
-    node *inserir(node *raiz,int n);
-
+    nodeA *inserir(nodeA *raiz,int n);
 };
 
-node *Arvore::inserir(node *raiz,int n){
+void menu(){
+    ifstream menu;
+    string linha;
+    int n;
+    bool continuar = true;
+    
+    while(continuar){
+        system("cls");
+        cout<<"              MENU"<<"\n";
+        cout<<"1 jogar"<<"\n";
+        cout<<"2 regras"<<"\n";
+        cout<<"3 historia"<<"\n\n";
+        cout << "escolha: ";
+        while(true){
+            cin >> n;
+        if(n == 1 || n == 2 || n ==3){
+            cout<<"valor valido";
+            break;
+        }
+        else{
+            system("cls");
+            cout<<"valor invalido, tente outro: "<<"\n";
+            cin>> n;
+        }
+        }
+        
+        switch (n)
+        {
+        case 1:
+            system("cls");
+            continuar = false;
+            break;
+        case 2:
+            system("cls");
+            menu.open("regras.txt");
+            if(menu.is_open()){
+                while(getline(menu,linha)){
+                    cout << linha << endl;
+                }
+                menu.close();
+                cout << "\n";
+                system("pause");
+                system("cls");
+            }
+            else{
+                cout<<"erro na abertura do arquivo"<< endl;
+                system("pause");
+            }
+            break;
+        case 3: 
+            system("cls");
+            menu.open("historiaMenu.txt");
+            if(menu.is_open()){
+                while(getline(menu,linha)){
+                    cout << linha << endl;
+                }
+                menu.close();
+                system("pause");
+            }
+            else{
+                cout<<"erro na abertura do arquivo"<< endl;
+                system("pause");
+            }
+        /* code */
+            break;
+    
+        default:
+            break;
+        }
+    }
+}
+
+nodeA *Arvore::inserir(nodeA *raiz,int n){
     if(raiz == nullptr){
-        raiz = new node();
+        raiz = new nodeA();
         if(raiz == nullptr)
             exit(1);
         raiz ->dir = nullptr;
@@ -46,6 +122,7 @@ node *Arvore::inserir(node *raiz,int n){
 }
 
 int main(){
+    menu();
     Arvore arv;
     arv.raiz = arv.inserir(arv.raiz,5);
     arv.raiz = arv.inserir(arv.raiz,15);
