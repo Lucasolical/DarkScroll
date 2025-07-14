@@ -27,9 +27,8 @@ class Arvore{
         raiz = nullptr;
     }
     nodeA *inserirAr(nodeA *raiz,int n);
+    void criarArvore();
 };
-
-
 
 class ListaE{
     private:
@@ -42,15 +41,56 @@ class ListaE{
      void listar(int n);
 };
 
+void Arvore::criarArvore(){
+    Arvore arv;
+    arv.raiz = inserirAr(arv.raiz, 200);
+    arv.raiz = inserirAr(arv.raiz, 300);
+    arv.raiz = inserirAr(arv.raiz, 350);
+    arv.raiz = inserirAr(arv.raiz, 250);
+    arv.raiz = inserirAr(arv.raiz, 260);
+    arv.raiz = inserirAr(arv.raiz, 220);
+    arv.raiz = inserirAr(arv.raiz, 320);
+    arv.raiz = inserirAr(arv.raiz, 360);
+    arv.raiz = inserirAr(arv.raiz, 218);
+    arv.raiz = inserirAr(arv.raiz, 230);
+    arv.raiz = inserirAr(arv.raiz, 315);
+    arv.raiz = inserirAr(arv.raiz, 330);
+    arv.raiz = inserirAr(arv.raiz, 216);
+    arv.raiz = inserirAr(arv.raiz, 219);
+    arv.raiz = inserirAr(arv.raiz, 100);
+    arv.raiz = inserirAr(arv.raiz, 150);
+    arv.raiz = inserirAr(arv.raiz, 50);
+    arv.raiz = inserirAr(arv.raiz, 25);
+    arv.raiz = inserirAr(arv.raiz, 75);
+    arv.raiz = inserirAr(arv.raiz, 20);
+    arv.raiz = inserirAr(arv.raiz, 27);
+    arv.raiz = inserirAr(arv.raiz, 18);
+    arv.raiz = inserirAr(arv.raiz, 22);
+    arv.raiz = inserirAr(arv.raiz, 16);
+    arv.raiz = inserirAr(arv.raiz, 19);
+    arv.raiz = inserirAr(arv.raiz, 14);
+    arv.raiz = inserirAr(arv.raiz, 17);
+    arv.raiz = inserirAr(arv.raiz, 12);
+    arv.raiz = inserirAr(arv.raiz, 15);
+    arv.raiz = inserirAr(arv.raiz, 10);
+    arv.raiz = inserirAr(arv.raiz, 13);
+    arv.raiz = inserirAr(arv.raiz, 8);
+    arv.raiz = inserirAr(arv.raiz, 11);
+    arv.raiz = inserirAr(arv.raiz, 6);
+    arv.raiz = inserirAr(arv.raiz, 9);
+}
 void ListaE::listar(int n){
-   nodeL *atual;
-   atual = inicio;
-   while(atual!=nullptr){
-      cout<<atual->text<<"\n";
-      system("pause");
-      system("cls");
-      cout<<atual->info<<"\n";
-      atual = atual -> prox;
+    nodeL *atual;
+    atual = inicio;
+    while(atual!=nullptr){
+        if(atual->info == n){
+            cout<<atual->text<<"\n";
+            system("pause");
+            system("cls");
+            cout<<atual->info<<"\n";
+            break;
+        }
+        atual = atual -> prox;
    }
    cout<<"\n";
  }
@@ -147,11 +187,11 @@ nodeA *Arvore::inserirAr(nodeA *raiz,int n){
         return raiz;
     }
     else{
-        if(raiz -> info <= n){
+        if(raiz -> info < n){
             raiz -> dir = inserirAr(raiz ->dir, n);
             return raiz;
         }
-        else if(raiz -> info >= n){
+        else if(raiz -> info > n){
             raiz -> esq = inserirAr(raiz->esq, n);
             return raiz;
         }
@@ -193,8 +233,7 @@ int ListaE::inserirHistL(int comecoL, int fimL, int n){
     }
     atual->prox = novo;
     novo->text = bloco;
-    novo->prox = nullptr;
-    cout << "Bloco armazenado:\n" << bloco;
+    novo->prox = nullptr; 
     return 0;
 
 }
@@ -202,8 +241,10 @@ int ListaE::inserirHistL(int comecoL, int fimL, int n){
 int main(){
     Arvore arv;
     ListaE lise;
+    arv.criarArvore();
     system("cls");
-    lise.inserirHistL(1,1,5);
-    lise.listar(4);
-    //menu();
+    lise.inserirHistL(1,4,200);
+    lise.inserirHistL(5,9,100);
+    lise.listar(100);
+    lise.listar(200);
 }
