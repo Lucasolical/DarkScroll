@@ -1,24 +1,36 @@
 #include<iostream>
 #include<fstream>
-
+#include<windows.h>
+#include <locale.h>
 using namespace std;
-
+//usado 
 struct nodeL{
     int info;
     string text;
     nodeL *prox;
 };
-
+//não usado ainda
 struct nodeLD{
     string player;
     string titulo;
     int nJogos, wins, loses;
     nodeLD *prox, *ant;
 };
-
+//usado
 struct nodeA{
     int info;
     nodeA *dir, *esq;
+};
+
+class ListaE{
+    public:
+     nodeL *inicio;
+     ListaE(){
+        inicio = nullptr;
+     }
+     int inserirHistL(int comecoL, int fimL, int n);
+     void criarListaE();
+     void listar(int n);
 };
 
 class Arvore{
@@ -29,20 +41,10 @@ class Arvore{
     }
     nodeA *inserirAr(nodeA *raiz,int n);
     void criarArvore();
-    void jogar(nodeA *raiz, string nome, string titulo);
+    void jogar(nodeA *raiz, ListaE &lista, string nome, string titulo);
 };
 
-class ListaE{
-    private:
-     nodeL *inicio;
-   public:
-     ListaE(){
-        inicio = nullptr;
-     }
-     int inserirHistL(int comecoL, int fimL, int n);
-     void criarListaE();
-     void listar(int n);
-};
+
 
 class ListaDE{
      private:
@@ -55,90 +57,88 @@ class ListaDE{
 };
 
 void Arvore::criarArvore(){
-    Arvore arv;
-    arv.raiz = inserirAr(arv.raiz, 200);
-    arv.raiz = inserirAr(arv.raiz, 300);
-    arv.raiz = inserirAr(arv.raiz, 350);
-    arv.raiz = inserirAr(arv.raiz, 250);
-    arv.raiz = inserirAr(arv.raiz, 260);
-    arv.raiz = inserirAr(arv.raiz, 220);
-    arv.raiz = inserirAr(arv.raiz, 320);
-    arv.raiz = inserirAr(arv.raiz, 360);
-    arv.raiz = inserirAr(arv.raiz, 218);
-    arv.raiz = inserirAr(arv.raiz, 230);
-    arv.raiz = inserirAr(arv.raiz, 315);
-    arv.raiz = inserirAr(arv.raiz, 330);
-    arv.raiz = inserirAr(arv.raiz, 216);
-    arv.raiz = inserirAr(arv.raiz, 219);
-    arv.raiz = inserirAr(arv.raiz, 215);
-    arv.raiz = inserirAr(arv.raiz, 217);
-    arv.raiz = inserirAr(arv.raiz, 100);
-    arv.raiz = inserirAr(arv.raiz, 150);
-    arv.raiz = inserirAr(arv.raiz, 50);
-    arv.raiz = inserirAr(arv.raiz, 25);
-    arv.raiz = inserirAr(arv.raiz, 75);
-    arv.raiz = inserirAr(arv.raiz, 20);
-    arv.raiz = inserirAr(arv.raiz, 27);
-    arv.raiz = inserirAr(arv.raiz, 18);
-    arv.raiz = inserirAr(arv.raiz, 22);
-    arv.raiz = inserirAr(arv.raiz, 16);
-    arv.raiz = inserirAr(arv.raiz, 19);
-    arv.raiz = inserirAr(arv.raiz, 14);
-    arv.raiz = inserirAr(arv.raiz, 17);
-    arv.raiz = inserirAr(arv.raiz, 12);
-    arv.raiz = inserirAr(arv.raiz, 15);
-    arv.raiz = inserirAr(arv.raiz, 10);
-    arv.raiz = inserirAr(arv.raiz, 13);
-    arv.raiz = inserirAr(arv.raiz, 8);
-    arv.raiz = inserirAr(arv.raiz, 11);
-    arv.raiz = inserirAr(arv.raiz, 6);
-    arv.raiz = inserirAr(arv.raiz, 9);
+    
+    raiz = inserirAr(raiz, 200);
+    raiz = inserirAr(raiz, 300);
+    raiz = inserirAr(raiz, 350);
+    raiz = inserirAr(raiz, 250);
+    raiz = inserirAr(raiz, 260);
+    raiz = inserirAr(raiz, 220);
+    raiz = inserirAr(raiz, 320);
+    raiz = inserirAr(raiz, 360);
+    raiz = inserirAr(raiz, 218);
+    raiz = inserirAr(raiz, 230);
+    raiz = inserirAr(raiz, 315);
+    raiz = inserirAr(raiz, 330);
+    raiz = inserirAr(raiz, 216);
+    raiz = inserirAr(raiz, 219);
+    raiz = inserirAr(raiz, 215);
+    raiz = inserirAr(raiz, 217);
+    raiz = inserirAr(raiz, 100);
+    raiz = inserirAr(raiz, 150);
+    raiz = inserirAr(raiz, 50);
+    raiz = inserirAr(raiz, 25);
+    raiz = inserirAr(raiz, 75);
+    raiz = inserirAr(raiz, 20);
+    raiz = inserirAr(raiz, 27);
+    raiz = inserirAr(raiz, 18);
+    raiz = inserirAr(raiz, 22);
+    raiz = inserirAr(raiz, 16);
+    raiz = inserirAr(raiz, 19);
+    raiz = inserirAr(raiz, 14);
+    raiz = inserirAr(raiz, 17);
+    raiz = inserirAr(raiz, 12);
+    raiz = inserirAr(raiz, 15);
+    raiz = inserirAr(raiz, 10);
+    raiz = inserirAr(raiz, 13);
+    raiz = inserirAr(raiz, 8);
+    raiz = inserirAr(raiz, 11);
+    raiz = inserirAr(raiz, 6);
+    raiz = inserirAr(raiz, 9);
 }
 
 void ListaE::criarListaE(){
-    ListaE listaE;
-    
-    listaE.inserirHistL(1,4,200);//ponto de convergencia
+    inserirHistL(1,4,200);//ponto de convergencia
     //1°rota
-    listaE.inserirHistL(6,9,100);//titulo (individuo esquecido)
-    listaE.inserirHistL(11,11,150);//game over
-    listaE.inserirHistL(13,16,50);//titulo (individuo esquecido)
-    listaE.inserirHistL(18,18,75);//game over
-    listaE.inserirHistL(20,24,25);
-    listaE.inserirHistL(26,26,27);//game over
-    listaE.inserirHistL(28,21,20);
-    listaE.inserirHistL(33,33,22);//game over
-    listaE.inserirHistL(35,48,18);//titulo (Ex comandante carmesin)
-    listaE.inserirHistL(50,50,19);//game over
-    listaE.inserirHistL(51,57,16);
-    listaE.inserirHistL(59,59,17);//game over
-    listaE.inserirHistL(61,68,14);//titulo (traidor elfico)
-    listaE.inserirHistL(70,70,15);//game over
-    listaE.inserirHistL(72,75,12);
-    listaE.inserirHistL(77,77,13);//game over
-    listaE.inserirHistL(78,82,10);
-    listaE.inserirHistL(84,84,11);//game over
-    listaE.inserirHistL(85,98,8);
-    listaE.inserirHistL(100,111,9);//final mal (senhor das feras)
-    listaE.inserirHistL(113,128,6);//final bom(Aquele Que Recusou o Poder)
+    inserirHistL(6,9,100);//titulo (individuo esquecido)
+    inserirHistL(11,11,150);//game over
+    inserirHistL(13,16,50);//titulo (individuo esquecido)
+    inserirHistL(18,18,75);//game over
+    inserirHistL(20,24,25);
+    inserirHistL(26,26,27);//game over
+    inserirHistL(28,21,20);
+    inserirHistL(33,33,22);//game over
+    inserirHistL(35,48,18);//titulo (Ex comandante carmesin)
+    inserirHistL(50,50,19);//game over
+    inserirHistL(51,57,16);
+    inserirHistL(59,59,17);//ga
+    inserirHistL(61,68,14);//titulo (traidor elfico)
+    inserirHistL(70,70,15);//game over
+    inserirHistL(72,75,12);
+    inserirHistL(77,77,13);//game over
+    inserirHistL(78,82,10);
+    inserirHistL(84,84,11);//game over
+    inserirHistL(85,98,8);
+    inserirHistL(100,111,9);//final mal (senhor das feras)
+    inserirHistL(113,128,6);//final bom(Aquele Que Recusou o Poder)
     //2°rota
-    listaE.inserirHistL(131,173,300);//titulo(O homem da Profecia)convergencia bom/mal
+    inserirHistL(131,173,300);//titulo(O homem da Profecia)convergencia bom/mal
     //bom
-    listaE.inserirHistL(175,203,250);//titulo (Guardião Verdejante)
-    listaE.inserirHistL(205,211,260);//game over
-    listaE.inserirHistL(213,244,220);//titulo (Portador da Lembrança)
-    listaE.inserirHistL(246,254,230);//game over
-    listaE.inserirHistL(256,288,218);//titulo (Guardião da Alma Dividida)
-    listaE.inserirHistL(290,297,219);//game over
-    listaE.inserirHistL(299,334,216);//titulo (Guardião da Esperança)
-    listaE.inserirHistL(336,342,217);//final-titulo (Salvador Desconhecido)
-    listaE.inserirHistL(344,349,215);//final-titulo (Pilar da Paz)
+    inserirHistL(175,203,250);//titulo (Guardião Verdejante)
+    inserirHistL(205,211,260);//game over
+    inserirHistL(213,244,220);//titulo (Portador da Lembrança)
+    inserirHistL(246,254,230);//game over
+    inserirHistL(256,288,218);//titulo (Guardião da Alma Dividida)
+    inserirHistL(290,297,219);//game over
+    inserirHistL(299,334,216);//titulo (Guardião da Esperança)
+    inserirHistL(336,342,217);//final-titulo (Salvador Desconhecido)
+    inserirHistL(344,349,215);//final-titulo (Pilar da Paz)
     //mal
-    listaE.inserirHistL(357,389,350);//titulo (Executor da Ordem natural)
-    listaE.inserirHistL(391,393,360);//game over
-    listaE.inserirHistL(395,450,320);//titulo (O vazio Enraizado)
-    listaE.inserirHistL(453,454,330);//game over
-    listaE.inserirHistL(456,480,315);//final-titulo (A ruina dos 3 reinos)
+    inserirHistL(357,389,350);//titulo (Executor da Ordem natural)
+    inserirHistL(391,393,360);//game over
+    inserirHistL(395,450,320);//titulo (O vazio Enraizado)
+    inserirHistL(453,454,330);//game over
+    inserirHistL(456,480,315);//final-titulo (A ruina dos 3 reinos)
 }
 
 void ListaE::listar(int n){
@@ -149,7 +149,6 @@ void ListaE::listar(int n){
             cout<<atual->text<<"\n";
             system("pause");
             system("cls");
-            cout<<atual->info<<"\n";
             break;
         }
         atual = atual -> prox;
@@ -157,10 +156,11 @@ void ListaE::listar(int n){
    cout<<"\n";
  }
 
-void menu(){
+void menu(Arvore &arv, ListaE &lis){
     ifstream sinopse;
     ifstream regras;
     string linha;
+    string playerName;
     int n;
     bool continuar = true;
     
@@ -185,10 +185,29 @@ void menu(){
         }
         switch (n)
         {
+        //jogar
         case 1:
             system("cls");
-            continuar = false;
+            int again;
+            cout<<"digite o nome do jogador: \n";
+            cin>>playerName;
+            while(true){
+                arv.jogar(arv.raiz, lis, playerName,"o desconhecido");
+                while(true){
+                    cout<<"Jogar novamente? 1-sim 2-não: ";
+                    cin>>again;
+                    if(again == 1 || again == 2){
+                        break;
+                    }
+                    else{
+                        cout<<"opção invalida\n";
+                    }
+                }
+                
+            }
+            
             break;
+        //regras
         case 2:
             system("cls");
             regras.open("regras.txt");
@@ -206,6 +225,7 @@ void menu(){
                 system("pause");
             }
             break;
+        //hitoria
         case 3: 
             system("cls");
             sinopse.open("historiaMenu.txt");
@@ -290,13 +310,17 @@ int ListaE::inserirHistL(int comecoL, int fimL, int n){
 
 }
 
-void Arvore::jogar(nodeA *raiz, string nome, string titulo){
+void Arvore::jogar(nodeA *raiz, ListaE &lista, string nome, string titulo){
+    setlocale(LC_ALL, "pt_BR.UTF-8");
+    lista.listar(raiz->info);
     int op;
-    if(raiz = nullptr){
+    if(raiz == nullptr){
         return;
     }
     else{
         while(true){
+            setlocale(LC_ALL, "pt_BR.UTF-8");
+            cout<<"faça sua escolha";
             cin>>op;
             if(op == 1 || op == 2){
                 break;
@@ -306,23 +330,26 @@ void Arvore::jogar(nodeA *raiz, string nome, string titulo){
             }
         }
         if(op == 1){
-            jogar(raiz->esq, nome, titulo);
+            jogar(raiz->esq, lista, nome, titulo);
         }
         else
-            jogar(raiz->dir, nome, titulo);
+            jogar(raiz->dir,lista, nome, titulo);
         
     }
         
 }
 
 int main(){
+    SetConsoleOutputCP(CP_UTF8);
     Arvore arv;
     ListaE lise;
+    ListaDE players;
+    lise.criarListaE();
     arv.criarArvore();
+    //menu(arv, lise);
+    arv.jogar(arv.raiz, lise, "tatu", "rei delas" );
     system("cls");
-    lise.inserirHistL(1,4,200);
-    lise.inserirHistL(5,9,100);
-    lise.listar(200);
-    lise.listar(100);
-    
 }
+
+
+//criar lista Dupla com informações do player
