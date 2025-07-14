@@ -10,7 +10,8 @@ struct nodeL{
 };
 
 struct nodeLD{
-    string Player;
+    string player;
+    string titulo;
     int nJogos, wins, loses;
     nodeLD *prox, *ant;
 };
@@ -28,6 +29,7 @@ class Arvore{
     }
     nodeA *inserirAr(nodeA *raiz,int n);
     void criarArvore();
+    void jogar(nodeA *raiz, string nome, string titulo);
 };
 
 class ListaE{
@@ -38,7 +40,18 @@ class ListaE{
         inicio = nullptr;
      }
      int inserirHistL(int comecoL, int fimL, int n);
+     void criarListaE();
      void listar(int n);
+};
+
+class ListaDE{
+     private:
+     nodeLD *inicio;
+   public:
+     ListaDE(){
+        inicio = nullptr;
+     }
+     int addPlayer(string nome, string titulo, int nJogos, int win, int loses);
 };
 
 void Arvore::criarArvore(){
@@ -57,6 +70,8 @@ void Arvore::criarArvore(){
     arv.raiz = inserirAr(arv.raiz, 330);
     arv.raiz = inserirAr(arv.raiz, 216);
     arv.raiz = inserirAr(arv.raiz, 219);
+    arv.raiz = inserirAr(arv.raiz, 215);
+    arv.raiz = inserirAr(arv.raiz, 217);
     arv.raiz = inserirAr(arv.raiz, 100);
     arv.raiz = inserirAr(arv.raiz, 150);
     arv.raiz = inserirAr(arv.raiz, 50);
@@ -79,6 +94,53 @@ void Arvore::criarArvore(){
     arv.raiz = inserirAr(arv.raiz, 6);
     arv.raiz = inserirAr(arv.raiz, 9);
 }
+
+void ListaE::criarListaE(){
+    ListaE listaE;
+    
+    listaE.inserirHistL(1,4,200);//ponto de convergencia
+    //1°rota
+    listaE.inserirHistL(6,9,100);//titulo (individuo esquecido)
+    listaE.inserirHistL(11,11,150);//game over
+    listaE.inserirHistL(13,16,50);//titulo (individuo esquecido)
+    listaE.inserirHistL(18,18,75);//game over
+    listaE.inserirHistL(20,24,25);
+    listaE.inserirHistL(26,26,27);//game over
+    listaE.inserirHistL(28,21,20);
+    listaE.inserirHistL(33,33,22);//game over
+    listaE.inserirHistL(35,48,18);//titulo (Ex comandante carmesin)
+    listaE.inserirHistL(50,50,19);//game over
+    listaE.inserirHistL(51,57,16);
+    listaE.inserirHistL(59,59,17);//game over
+    listaE.inserirHistL(61,68,14);//titulo (traidor elfico)
+    listaE.inserirHistL(70,70,15);//game over
+    listaE.inserirHistL(72,75,12);
+    listaE.inserirHistL(77,77,13);//game over
+    listaE.inserirHistL(78,82,10);
+    listaE.inserirHistL(84,84,11);//game over
+    listaE.inserirHistL(85,98,8);
+    listaE.inserirHistL(100,111,9);//final mal (senhor das feras)
+    listaE.inserirHistL(113,128,6);//final bom(Aquele Que Recusou o Poder)
+    //2°rota
+    listaE.inserirHistL(131,173,300);//titulo(O homem da Profecia)convergencia bom/mal
+    //bom
+    listaE.inserirHistL(175,203,250);//titulo (Guardião Verdejante)
+    listaE.inserirHistL(205,211,260);//game over
+    listaE.inserirHistL(213,244,220);//titulo (Portador da Lembrança)
+    listaE.inserirHistL(246,254,230);//game over
+    listaE.inserirHistL(256,288,218);//titulo (Guardião da Alma Dividida)
+    listaE.inserirHistL(290,297,219);//game over
+    listaE.inserirHistL(299,334,216);//titulo (Guardião da Esperança)
+    listaE.inserirHistL(336,342,217);//final-titulo (Salvador Desconhecido)
+    listaE.inserirHistL(344,349,215);//final-titulo (Pilar da Paz)
+    //mal
+    listaE.inserirHistL(357,389,350);//titulo (Executor da Ordem natural)
+    listaE.inserirHistL(391,393,360);//game over
+    listaE.inserirHistL(395,450,320);//titulo (O vazio Enraizado)
+    listaE.inserirHistL(453,454,330);//game over
+    listaE.inserirHistL(456,480,315);//final-titulo (A ruina dos 3 reinos)
+}
+
 void ListaE::listar(int n){
     nodeL *atual;
     atual = inicio;
@@ -94,16 +156,6 @@ void ListaE::listar(int n){
    }
    cout<<"\n";
  }
-
-class ListaDE{
-     private:
-     nodeLD *inicio;
-   public:
-     ListaDE(){
-        inicio = nullptr;
-     }
-     int criarHis(string &arq, int comecoL, int fimL);
-};
 
 void menu(){
     ifstream sinopse;
@@ -238,6 +290,31 @@ int ListaE::inserirHistL(int comecoL, int fimL, int n){
 
 }
 
+void Arvore::jogar(nodeA *raiz, string nome, string titulo){
+    int op;
+    if(raiz = nullptr){
+        return;
+    }
+    else{
+        while(true){
+            cin>>op;
+            if(op == 1 || op == 2){
+                break;
+            }
+            else{
+                cout<<"opção invalida, tente outra: \n";
+            }
+        }
+        if(op == 1){
+            jogar(raiz->esq, nome, titulo);
+        }
+        else
+            jogar(raiz->dir, nome, titulo);
+        
+    }
+        
+}
+
 int main(){
     Arvore arv;
     ListaE lise;
@@ -245,6 +322,7 @@ int main(){
     system("cls");
     lise.inserirHistL(1,4,200);
     lise.inserirHistL(5,9,100);
-    lise.listar(100);
     lise.listar(200);
+    lise.listar(100);
+    
 }
