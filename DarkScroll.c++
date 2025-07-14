@@ -5,7 +5,14 @@ using namespace std;
 
 struct nodeL{
     int info;
-    nodeL *dir;
+    string text;
+    nodeL *prox;
+};
+
+struct nodeLD{
+    string Player;
+    int nJogos, wins, loses;
+    nodeLD *prox, *ant;
 };
 
 struct nodeA{
@@ -19,11 +26,48 @@ class Arvore{
     Arvore(){
         raiz = nullptr;
     }
-    nodeA *inserir(nodeA *raiz,int n);
+    nodeA *inserirAr(nodeA *raiz,int n);
+};
+
+
+
+class ListaE{
+    private:
+     nodeL *inicio;
+   public:
+     ListaE(){
+        inicio = nullptr;
+     }
+     int inserirHistL(int comecoL, int fimL, int n);
+     void listar(int n);
+};
+
+void ListaE::listar(int n){
+   nodeL *atual;
+   atual = inicio;
+   while(atual!=nullptr){
+      cout<<atual->text<<"\n";
+      system("pause");
+      system("cls");
+      cout<<atual->info<<"\n";
+      atual = atual -> prox;
+   }
+   cout<<"\n";
+ }
+
+class ListaDE{
+     private:
+     nodeLD *inicio;
+   public:
+     ListaDE(){
+        inicio = nullptr;
+     }
+     int criarHis(string &arq, int comecoL, int fimL);
 };
 
 void menu(){
-    ifstream menu;
+    ifstream sinopse;
+    ifstream regras;
     string linha;
     int n;
     bool continuar = true;
@@ -37,17 +81,16 @@ void menu(){
         cout << "escolha: ";
         while(true){
             cin >> n;
-        if(n == 1 || n == 2 || n ==3){
-            cout<<"valor valido";
-            break;
+            if(n == 1 || n == 2 || n ==3){
+                cout<<"valor valido";
+                break;
+            }
+            else{
+                system("cls");
+                cout<<"valor invalido, tente outro: "<<"\n";
+                cin>> n;
+            }
         }
-        else{
-            system("cls");
-            cout<<"valor invalido, tente outro: "<<"\n";
-            cin>> n;
-        }
-        }
-        
         switch (n)
         {
         case 1:
@@ -56,12 +99,12 @@ void menu(){
             break;
         case 2:
             system("cls");
-            menu.open("regras.txt");
-            if(menu.is_open()){
-                while(getline(menu,linha)){
+            regras.open("regras.txt");
+            if(regras.is_open()){
+                while(getline(regras,linha)){
                     cout << linha << endl;
                 }
-                menu.close();
+                regras.close();
                 cout << "\n";
                 system("pause");
                 system("cls");
@@ -73,19 +116,18 @@ void menu(){
             break;
         case 3: 
             system("cls");
-            menu.open("historiaMenu.txt");
-            if(menu.is_open()){
-                while(getline(menu,linha)){
+            sinopse.open("historiaMenu.txt");
+            if(sinopse.is_open()){
+                while(getline(sinopse,linha)){
                     cout << linha << endl;
                 }
-                menu.close();
+                sinopse.close();
                 system("pause");
             }
             else{
                 cout<<"erro na abertura do arquivo"<< endl;
                 system("pause");
             }
-        /* code */
             break;
     
         default:
@@ -94,7 +136,7 @@ void menu(){
     }
 }
 
-nodeA *Arvore::inserir(nodeA *raiz,int n){
+nodeA *Arvore::inserirAr(nodeA *raiz,int n){
     if(raiz == nullptr){
         raiz = new nodeA();
         if(raiz == nullptr)
@@ -106,29 +148,62 @@ nodeA *Arvore::inserir(nodeA *raiz,int n){
     }
     else{
         if(raiz -> info <= n){
-            raiz -> dir = inserir(raiz ->dir, n);
+            raiz -> dir = inserirAr(raiz ->dir, n);
             return raiz;
         }
         else if(raiz -> info >= n){
-            raiz -> esq = inserir(raiz->esq, n);
+            raiz -> esq = inserirAr(raiz->esq, n);
             return raiz;
         }
         else
             cout<< "esse valor ja existe na arvore";
                 return raiz;
     }
-        
+}
+
+int ListaE::inserirHistL(int comecoL, int fimL, int n){
+    nodeL *novo = new nodeL();
+    nodeL *atual;
+    novo->info = n;
+    ifstream arquivo("HistoriaJogo.txt");
+    string linha;
+    string bloco;
+    int numeroLinha = 1;
+    if (!arquivo.is_open()) {
+        cerr << "Erro ao abrir o arquivo!" << endl;
+        return 0;
+    }
+
+    while (getline(arquivo, linha)) {
+        if (numeroLinha >= comecoL && numeroLinha <= fimL) {
+            bloco += linha + "\n"; // Adiciona a linha e uma quebra de linha
+        }
+        numeroLinha++;
+    }
+    arquivo.close();
+    if(inicio == nullptr){
+        inicio = novo;
+        novo->text = bloco;
+        novo->prox = nullptr;
+        return 0;
+    }
+    atual = inicio;
+    while(atual->prox!= nullptr){
+        atual = atual->prox;
+    }
+    atual->prox = novo;
+    novo->text = bloco;
+    novo->prox = nullptr;
+    cout << "Bloco armazenado:\n" << bloco;
+    return 0;
 
 }
 
 int main(){
-    menu();
     Arvore arv;
-    arv.raiz = arv.inserir(arv.raiz,5);
-    arv.raiz = arv.inserir(arv.raiz,15);
-    arv.raiz = arv.inserir(arv.raiz,20);
-    arv.raiz = arv.inserir(arv.raiz,4);
-    arv.raiz = arv.inserir(arv.raiz,1);
-    arv.raiz = arv.inserir(arv.raiz,30);
-    arv.raiz = arv.inserir(arv.raiz,25);
+    ListaE lise;
+    system("cls");
+    lise.inserirHistL(1,1,5);
+    lise.listar(4);
+    //menu();
 }
