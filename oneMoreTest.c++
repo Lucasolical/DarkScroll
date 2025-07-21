@@ -21,6 +21,7 @@ struct nodeLD{
 //usado(no de arvore)
 struct nodeA{
     int info;
+    string fases;
     nodeA *dir, *esq;
 };
 
@@ -53,7 +54,7 @@ class Arvore{
     Arvore(){
         raiz = nullptr;
     }
-    nodeA *inserirAr(nodeA *raiz,int n);
+    nodeA *inserirAr(nodeA *raiz,int n, string fase);
     void criarArvore();
     void jogar(nodeA *raiz, ListaDE &listade, ListaE &lista, string nome, string titulo);
     nodeA *EmOr(nodeA *raiz);
@@ -147,46 +148,46 @@ string gerarTitulo(int n){
         titulo = "A ruina dos 3 reinos";
     return titulo;
 }
-
+//cria arvore pré-definida
 void Arvore::criarArvore(){
     
-    raiz = inserirAr(raiz, 200);
-    raiz = inserirAr(raiz, 300);
-    raiz = inserirAr(raiz, 350);
-    raiz = inserirAr(raiz, 250);
-    raiz = inserirAr(raiz, 260);
-    raiz = inserirAr(raiz, 220);
-    raiz = inserirAr(raiz, 320);
-    raiz = inserirAr(raiz, 360);
-    raiz = inserirAr(raiz, 218);
-    raiz = inserirAr(raiz, 230);
-    raiz = inserirAr(raiz, 315);
-    raiz = inserirAr(raiz, 330);
-    raiz = inserirAr(raiz, 216);
-    raiz = inserirAr(raiz, 219);
-    raiz = inserirAr(raiz, 215);
-    raiz = inserirAr(raiz, 217);
-    raiz = inserirAr(raiz, 100);
-    raiz = inserirAr(raiz, 150);
-    raiz = inserirAr(raiz, 50);
-    raiz = inserirAr(raiz, 25);
-    raiz = inserirAr(raiz, 75);
-    raiz = inserirAr(raiz, 20);
-    raiz = inserirAr(raiz, 27);
-    raiz = inserirAr(raiz, 18);
-    raiz = inserirAr(raiz, 22);
-    raiz = inserirAr(raiz, 16);
-    raiz = inserirAr(raiz, 19);
-    raiz = inserirAr(raiz, 14);
-    raiz = inserirAr(raiz, 17);
-    raiz = inserirAr(raiz, 12);
-    raiz = inserirAr(raiz, 15);
-    raiz = inserirAr(raiz, 10);
-    raiz = inserirAr(raiz, 13);
-    raiz = inserirAr(raiz, 8);
-    raiz = inserirAr(raiz, 11);
-    raiz = inserirAr(raiz, 6);
-    raiz = inserirAr(raiz, 9);
+    raiz = inserirAr(raiz, 200, "inicio de tudo");
+    raiz = inserirAr(raiz, 300, "a voz misteriosa");
+    raiz = inserirAr(raiz, 350, "o inicio do fim");
+    raiz = inserirAr(raiz, 250,"o purificador arcano");
+    raiz = inserirAr(raiz, 260, "a visão da morte");
+    raiz = inserirAr(raiz, 220, "a aceitação");
+    raiz = inserirAr(raiz, 320,"O escolhido das trevas");
+    raiz = inserirAr(raiz, 360, "corte do mal pela raiz");
+    raiz = inserirAr(raiz, 218, "Aquele que um dia destruiu");
+    raiz = inserirAr(raiz, 230, "Destruição do passado");
+    raiz = inserirAr(raiz, 315, "a destruição dos reinos");//fim rota 2 final ruim
+    raiz = inserirAr(raiz, 330, "lembranças de um amigo");//fim rota 2 final redenção
+    raiz = inserirAr(raiz, 216,"um por todos e todos por um");
+    raiz = inserirAr(raiz, 219,"a batalha perdida");
+    raiz = inserirAr(raiz, 215, "a redenção do ceifador");//fim rota 2 final bom
+    raiz = inserirAr(raiz, 217, "O Heroi desconhecido");//fim rota 2 final +- bom
+    raiz = inserirAr(raiz, 100,"Um outro caminho");
+    raiz = inserirAr(raiz, 150, "curiosidade matou o gato");
+    raiz = inserirAr(raiz, 50, "nadador nato");
+    raiz = inserirAr(raiz, 25,"Aceitando doces de estranhos");
+    raiz = inserirAr(raiz, 75,"Quem avisa amigo é");
+    raiz = inserirAr(raiz, 20, "escondendo a desconfiança");
+    raiz = inserirAr(raiz, 27, "pega fujão");
+    raiz = inserirAr(raiz, 18, "pacificamente");
+    raiz = inserirAr(raiz, 22, "luta em vão");
+    raiz = inserirAr(raiz, 16, "uma nova aliança");
+    raiz = inserirAr(raiz, 19, "nada feito");
+    raiz = inserirAr(raiz, 14, "missão suicida");
+    raiz = inserirAr(raiz, 17, "na porta da execução");
+    raiz = inserirAr(raiz, 12, "stealth total");
+    raiz = inserirAr(raiz, 15, "imprudência na missão");
+    raiz = inserirAr(raiz, 10, "o plano da comandante");
+    raiz = inserirAr(raiz, 13, "nada de plano");
+    raiz = inserirAr(raiz, 8, "magia proibida");
+    raiz = inserirAr(raiz, 11, "nada a derruba");
+    raiz = inserirAr(raiz, 6, "A força de talian");
+    raiz = inserirAr(raiz, 9, "Senhor das feras");
 }
 
 void ListaE::criarListaE(){
@@ -481,7 +482,7 @@ void menu(Arvore &arv, ListaE &lis, ListaDE &lisDE){
     }
 }
 
-nodeA *Arvore::inserirAr(nodeA *raiz,int n){
+nodeA *Arvore::inserirAr(nodeA *raiz,int n, string fase){
     if(raiz == nullptr){
         raiz = new nodeA();
         if(raiz == nullptr)
@@ -489,15 +490,16 @@ nodeA *Arvore::inserirAr(nodeA *raiz,int n){
         raiz ->dir = nullptr;
         raiz ->esq = nullptr;
         raiz -> info = n;
+        raiz->fases = fase;
         return raiz;
     }
     else{
         if(raiz -> info < n){
-            raiz -> dir = inserirAr(raiz ->dir, n);
+            raiz -> dir = inserirAr(raiz ->dir, n, fase);
             return raiz;
         }
         else if(raiz -> info > n){
-            raiz -> esq = inserirAr(raiz->esq, n);
+            raiz -> esq = inserirAr(raiz->esq, n, fase);
             return raiz;
         }
         else
@@ -552,7 +554,7 @@ void Arvore::jogar(nodeA *raiz, ListaDE &listade, ListaE &lista, string nome, st
     }
     lista.listar(raiz->info);
 
-    if(raiz->info == 150||raiz->info == 75|| raiz->info == 27|| raiz->info == 22|| raiz->info == 19|| raiz->info == 17|| raiz->info == 15|| raiz->info == 13|| raiz->info == 11|| raiz->info == 9){
+    if(raiz->info == 150||raiz->info == 75|| raiz->info == 27|| raiz->info == 22|| raiz->info == 19|| raiz->info == 17|| raiz->info == 15|| raiz->info == 13|| raiz->info == 11|| raiz->info == 9|| raiz->info == 260 || raiz->info == 230 || raiz->info == 219 || raiz->info == 360 || raiz->info == 330){
         cout<<"Game over";
         listade.inserirScorePlayer(listade, nome, titulo, 0, 1, 1);
         return;
@@ -591,7 +593,7 @@ nodeA *Arvore::EmOr(nodeA *raiz){
         return raiz;
     else{
         EmOr(raiz->esq);
-        cout<<raiz->info<<"\n";
+        cout<<raiz->fases<<"\n";
         EmOr(raiz->dir);
         return raiz;
     }
@@ -605,7 +607,6 @@ int main(){
     lise.criarListaE();
     arv.criarArvore();
     menu(arv, lise, players);
-    
     //arv.jogar(arv.raiz, players, lise, nome, titulo);
 
     return 1;
