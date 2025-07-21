@@ -1,0 +1,9 @@
+tatu
+Ex comandante carmesin
+Wins: 2
+Loses: 1
+cleito
+individuo esquecido
+Wins: 2
+Loses: 1
+Total de jogos: 3
