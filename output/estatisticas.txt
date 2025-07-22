@@ -1,5 +1,20 @@
-talian
-individuo esquecido
+tatu
+Guardião da Alma Dividida
+Wins: 2
+Loses: 3
+Total de jogos: 5
+randon
+Guardião da Alma Dividida
+Wins: 0
+Loses: 2
+Total de jogos: 2
+randon
+A ruina dos 3 reinos
+Wins: 1
+Loses: 0
+Total de jogos: 1
+randon
+O vazio Enraizado
 Wins: 0
 Loses: 1
 Total de jogos: 1

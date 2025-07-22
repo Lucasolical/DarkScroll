@@ -44,7 +44,7 @@ class ListaDE{
      ListaDE(){
         inicio = nullptr;
      }
-     int inserirScorePlayer(ListaDE &lista, string nome, string titulo, int win, int lose, int qtdJogos);
+     int inserirScorePlayer(string nome, string titulo, int win, int lose, int qtdJogos);
      void carregarEstatisticasDeArquivo();
 };
 
@@ -87,7 +87,7 @@ void ListaDE::carregarEstatisticasDeArquivo() {
         arquivo.ignore(); // Ignora o newline
         arquivo >> linha >> loses; // Lê "Loses: " e o número
         arquivo.ignore(); // Ignora o newline
-        arquivo >> linha >> linha >> nJogos; // Lê "Total de jogos: " e o número
+        arquivo >> linha >> nJogos; // Lê "Total de jogos: " e o número
         arquivo.ignore(); // Ignora o newline, se houver um
 
         // Cria e insere o novo nó na lista
@@ -234,100 +234,100 @@ void ListaE::criarListaE(){
     inserirHistL(456,480,315);//final-titulo (A ruina dos 3 reinos)
 }
 
-int ListaDE::inserirScorePlayer(ListaDE &lista, string nome, string titulo, int win, int lose, int qtdJogos){
+int ListaDE::inserirScorePlayer(string nome, string titulo, int win, int lose, int qtdJogos){
     nodeLD *novo;
     nodeLD *atual;
     vector<string>linhas;
     string linha;
 
-    // Primeiro, tenta encontrar o jogador na lista EM MEMÓRIA
-    atual = inicio;
-    while (atual != nullptr) {
-        if (atual->player == nome) {
-            // Jogador encontrado: atualiza as estatísticas na memória
-            atual->wins += win;
-            atual->loses += lose;
-            atual->nJogos += qtdJogos;
-            atual->titulos = titulo; // Atualiza o título se necessário
-
-            // Agora, atualiza o arquivo
-            ifstream seeplayers("estatisticas.txt");
-            if (!seeplayers.is_open()) {
-                cerr << "Erro ao abrir o arquivo para leitura!" << endl;
-                return 0; // Ou outro código de erro apropriado
-            }
-            while (getline(seeplayers, linha)) {
-                linhas.push_back(linha);
-            }
-            seeplayers.close();
-
-            for (size_t i = 0; i < linhas.size(); i++) {
-                if (linhas[i] == nome) {
-                    if (i + 4 < linhas.size()) {
-                        linhas[i+1] = titulo; // Atualiza o título
-                        linhas[i+2] = "Wins: " + to_string(atual->wins);
-                        linhas[i+3] = "Loses: " + to_string(atual->loses);
-                        linhas[i+4] = "Total de jogos: " + to_string(atual->nJogos);
-                    } else {
-                        cerr << "Erro: formato de arquivo inesperado para o jogador " << nome << endl;
-                        return 2;
-                    }
-                    break;
-                }
-            }
-
-            ofstream saida("estatisticas.txt");
-            if (!saida.is_open()) {
-                cerr << "Erro ao abrir arquivo para escrita!" << endl;
-                return 3;
-            }
-            for (const string& l : linhas) {
-                saida << l << endl;
-            }
-            saida.close();
-            cout << "Estatisticas atualizadas." << endl;
-            return 0; // Jogador atualizado com sucesso
-        }
-        atual = atual->prox;
-    }
-
-    // Se o jogador NÃO foi encontrado na lista em memória, é um novo jogador
-    novo = new nodeLD();
-    novo->player = nome;
-    novo->titulos = titulo;
-    novo->wins = win;
-    novo->loses = lose;
-    novo->nJogos = qtdJogos;
-    novo->prox = nullptr;
-    novo->ant = nullptr; // Importante inicializar o 'ant'
-
-    // Adiciona o novo nó ao final da lista duplamente encadeada EM MEMÓRIA
-    if (inicio == nullptr) {
-        inicio = novo;
-    } else {
+        // Primeiro, tenta encontrar o jogador na lista EM MEMÓRIA
         atual = inicio;
-        while (atual->prox != nullptr) {
+        while (atual != nullptr) {
+            if (atual->player == nome) {
+                // Jogador encontrado: atualiza as estatísticas na memória
+                atual->wins += win;
+                atual->loses += lose;
+                atual->nJogos = atual->loses +atual->wins;
+                atual->titulos = titulo; // Atualiza o título se necessário
+
+                // Agora, atualiza o arquivo
+                ifstream seeplayers("estatisticas.txt");
+                if (!seeplayers.is_open()) {
+                    cerr << "Erro ao abrir o arquivo para leitura!" << endl;
+                    return 0; // Ou outro código de erro apropriado
+                }
+                while (getline(seeplayers, linha)) {
+                    linhas.push_back(linha);
+                }
+                seeplayers.close();
+
+                for (size_t i = 0; i < linhas.size(); i++) {
+                    if (linhas[i] == nome) {
+                        if (i + 4 < linhas.size()) {
+                            linhas[i+1] = titulo; // Atualiza o título
+                            linhas[i+2] = "Wins: " + to_string(atual->wins);
+                            linhas[i+3] = "Loses: " + to_string(atual->loses);
+                            linhas[i+4] = "Total de jogos: " + to_string(atual->nJogos);
+                        } else {
+                            cerr << "Erro: formato de arquivo inesperado para o jogador " << nome << endl;
+                            return 2;
+                        }
+                        break;
+                    }
+                }
+
+                ofstream saida("estatisticas.txt");
+                if (!saida.is_open()) {
+                    cerr << "Erro ao abrir arquivo para escrita!" << endl;
+                    return 3;
+                }
+                for (const string& l : linhas) {
+                    saida << l << endl;
+                }
+                saida.close();
+                cout << "Estatisticas atualizadas." << endl;
+                return 0; // Jogador atualizado com sucesso
+            }
             atual = atual->prox;
         }
-        atual->prox = novo;
-        novo->ant = atual;
-    }
 
-    // Adiciona o novo jogador ao final do arquivo
-    ofstream players("estatisticas.txt", ios::app);
-    if (!players.is_open()) {
-        cerr << "Erro ao abrir o arquivo para escrita!" << endl;
-        // Se falhar ao escrever, podemos querer remover o nó da lista em memória, dependendo da estratégia de tratamento de erro.
-        // Por simplicidade, vamos apenas retornar 0 e manter na memória por enquanto.
-        return 0;
-    }
-    players << nome << "\n";
-    players << titulo << "\n";
-    players << "Wins: " << win << "\n";
-    players << "Loses: " << lose << "\n";
-    players << "Total de jogos: " << qtdJogos << "\n";
-    players.close();
-    cout << "Novo jogador adicionado." << endl;
+        // Se o jogador NÃO foi encontrado na lista em memória, é um novo jogador
+        novo = new nodeLD();
+        novo->player = nome;
+        novo->titulos = titulo;
+        novo->wins = win;
+        novo->loses = lose;
+        novo->nJogos = qtdJogos;
+        novo->prox = nullptr;
+        novo->ant = nullptr;
+
+        // Adiciona o novo nó ao final da lista duplamente encadeada EM MEMÓRIA
+        if (inicio == nullptr) {
+            inicio = novo;
+        } else {
+            atual = inicio;
+            while (atual->prox != nullptr) {
+                atual = atual->prox;
+            }
+            atual->prox = novo;
+            novo->ant = atual;
+        }
+
+        // Adiciona o novo jogador ao final do arquivo
+        ofstream players("estatisticas.txt", ios::app);
+        if (!players.is_open()) {
+            cerr << "Erro ao abrir o arquivo para escrita!" << endl;
+            // Se falhar ao escrever, podemos querer remover o nó da lista em memória, dependendo da estratégia de tratamento de erro.
+            // Por simplicidade, vamos apenas retornar 0 e manter na memória por enquanto.
+            return 0;
+        }
+        players << nome << "\n";
+        players << titulo << "\n";
+        players << "Wins: " << win << "\n";
+        players << "Loses: " << lose << "\n";
+        players << "Total de jogos: " << qtdJogos << "\n";
+        players.close();
+        cout << "Novo jogador adicionado." << endl;
     return 1; // Novo jogador adicionado com sucesso
 }
 
@@ -556,13 +556,13 @@ void Arvore::jogar(nodeA *raiz, ListaDE &listade, ListaE &lista, string nome, st
 
     if(raiz->info == 150||raiz->info == 75|| raiz->info == 27|| raiz->info == 22|| raiz->info == 19|| raiz->info == 17|| raiz->info == 15|| raiz->info == 13|| raiz->info == 11|| raiz->info == 9|| raiz->info == 260 || raiz->info == 230 || raiz->info == 219 || raiz->info == 360 || raiz->info == 330){
         cout<<"Game over";
-        listade.inserirScorePlayer(listade, nome, titulo, 0, 1, 1);
+        listade.inserirScorePlayer(nome, titulo, 0, 1, 1);
         return;
     }
     else if(raiz->info == 6||raiz->info == 215|| raiz->info == 217|| raiz->info == 315){
         
         cout<<"FIM\n\n"<<"E assim surge a lenda do "<<titulo;
-        listade.inserirScorePlayer(listade, nome, titulo, 1, 0, 1);
+        listade.inserirScorePlayer(nome, titulo, 1, 0, 1);
         return;
     }
     //nós que leval ao game over
@@ -607,8 +607,6 @@ int main(){
     lise.criarListaE();
     arv.criarArvore();
     menu(arv, lise, players);
-    //arv.jogar(arv.raiz, players, lise, nome, titulo);
-
     return 1;
 }
 
