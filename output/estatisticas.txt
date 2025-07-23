@@ -1,0 +1,35 @@
+tatu
+Guardião da Alma Dividida
+Wins: 7
+Loses: 5
+Total de jogos: 12
+randon
+A ruina dos 3 reinos
+Wins: 2
+Loses: 3
+Total de jogos: 5
+deide
+Portador da Lembrança
+Wins: 0
+Loses: 1
+Total de jogos: 1
+cleito
+senhor das feras
+Wins: 1
+Loses: 2
+Total de jogos: 3
+godar
+Portador da Lembrança
+Wins: 1
+Loses: 2
+Total de jogos: 3
+teste
+A ruina dos 3 reinos
+Wins: 1
+Loses: 0
+Total de jogos: 1
+normando
+Executor da Ordem natural
+Wins: 0
+Loses: 1
+Total de jogos: 1
