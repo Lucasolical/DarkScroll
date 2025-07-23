@@ -3,36 +3,36 @@ Voce acorda no meio de uma floresta, um area desconhecida, sua cabeca esta desno
 1-	um local claro com as arvores mais afastadas,(talvez seja a saida da floresta).
 2-	direcao da voz, onde as arvores sao mais densas impedindo a entrada da luz e trazendo uma brisa de vento fria e lenta que arrepia a pele ao encontro dela.
 
-1	você encontra um rio e o seguindo você observa uma casa no horizonte.
+você encontra um rio e o seguindo você observa uma casa no horizonte.
 
-1.1-	Voce pode atravessar o rio e seguir seu caminho.
-1.2-	Voce pode ir em direcao a casa para procurar alguem que possa passar alguma informacao .
+1-	Voce pode atravessar o rio e seguir seu caminho.
+2-	Voce pode ir em direcao a casa para procurar alguem que possa passar alguma informacao .
 
-1.2 Voce obeserva que a porta esta arrombada e se aproxima tentando encontrar algum sinal de vida. Voce nota que tem algo na casa por conta do barulho de cadeira se arrastando. Voce diz:"ola tem alguem em casa?" O som cessa bruscamente. segundos depois uma criatura quadrupede sem nenhum pelo e garras enormes investe contra voce, voce nao tem nenhuma lamina para se proteger contra a fera. Voce tenta resistir mas a besta é muito forte para enfrentar de mãos nuas.
+Voce obeserva que a porta esta arrombada e se aproxima tentando encontrar algum sinal de vida. Voce nota que tem algo na casa por conta do barulho de cadeira se arrastando. Voce diz:"ola tem alguem em casa?" O som cessa bruscamente. segundos depois uma criatura quadrupede sem nenhum pelo e garras enormes investe contra voce, voce nao tem nenhuma lamina para se proteger contra a fera. Voce tenta resistir mas a besta é muito forte para enfrentar de mãos nuas.
 
-1.1 Você fica completamente molhado, mas por sorte o dia está ensolarado e sua roupa secará rápido. Seguindo seu caminho o entardecer começa a chegar, você se depara com uma estrada. Provavelmente ela vai dar em alguma cidade. Você avista uma carroça se aproximando, algumas caras com feições agressivas e mal cuidadas compõem o interior da carroça. “Você está perdido meu amigo” pergunta o guia da carroça, “não é muito recomendável ficar nessas estradas a essa hora. Você pode ser atacado a qualquer momento. Suba, nos estamos indo para a cidade”.
+Você fica completamente molhado, mas por sorte o dia está ensolarado e sua roupa secará rápido. Seguindo seu caminho o entardecer começa a chegar, você se depara com uma estrada. Provavelmente ela vai dar em alguma cidade. Você avista uma carroça se aproximando, algumas caras com feições agressivas e mal cuidadas compõem o interior da carroça. “Você está perdido meu amigo” pergunta o guia da carroça, “não é muito recomendável ficar nessas estradas a essa hora. Você pode ser atacado a qualquer momento. Suba, nos estamos indo para a cidade”.
 
-1.1.1- aceitar a oferta e subir na carroça.
-1.1.2-“não é necessário, eu sei me cuidar”.
+2- aceitar a oferta e subir na carroça.
+1- “não é necessário, eu sei me cuidar”.
 
-1.1.2 "se é o que voce diz..., eu não vou me meter. Boa sorte amigo". o tempo passa, o dia vai sumindo e a noite aparecendo. Ao longe voce observa algumas silhuetas quadrupedes correndo depressa em sua direção."Essa não, devem ser lobos". Voce começa a correr, mas não tem cidade ou abrigo a vista. Voce procura algo para se defender, mas so encontra galhos secos. As criaturas estão proximas, voce nota que não são lobos e sim criaturas grotescas, com garras enormes e sem pelo, do tamanho de um humano adulto. Voce lembra do aviso do guia da carroça e se arrepende de não o ter escutado. Voce pega um pedaço de madeira do chão e desfere um golpe contra a primeira besta, mas sua pele era tão dura que quebrou o pedaço no primeiro golpe. Sem arma voce se ve em uma situação onde so se pode aceitar seu destino e se arrepender de sua escolha.
+"se é o que voce diz..., eu não vou me meter. Boa sorte amigo". o tempo passa, o dia vai sumindo e a noite aparecendo. Ao longe voce observa algumas silhuetas quadrupedes correndo depressa em sua direção."Essa não, devem ser lobos". Voce começa a correr, mas não tem cidade ou abrigo a vista. Voce procura algo para se defender, mas so encontra galhos secos. As criaturas estão proximas, voce nota que não são lobos e sim criaturas grotescas, com garras enormes e sem pelo, do tamanho de um humano adulto. Voce lembra do aviso do guia da carroça e se arrepende de não o ter escutado. Voce pega um pedaço de madeira do chão e desfere um golpe contra a primeira besta, mas sua pele era tão dura que quebrou o pedaço no primeiro golpe. Sem arma voce se ve em uma situação onde so se pode aceitar seu destino e se arrepender de sua escolha.
 
-1.1.1 “Não sei o que deu na sua cabeça de esta por aqui a essa hora, todo mundo sabe o que vem com o sair da noite” disse o guia. “Eu acabei perdendo a hora, estava caçando”- disse o protagonista.
+“Não sei o que deu na sua cabeça de esta por aqui a essa hora, todo mundo sabe o que vem com o sair da noite” disse o guia. “Eu acabei perdendo a hora, estava caçando”- disse o protagonista.
 Passa um pouco o tempo e você observa dois homens da carroça observando um cartaz e olhando para a sua cara enquanto cochichavam.
 
-1.1.1.1-Você finge que nada aconteceu.
-1.1.1.2-Você  pula da carroça sem dar chance dos homens reagirem.
+1-Você finge que nada aconteceu.
+2-Você  pula da carroça sem dar chance dos homens reagirem.
 
-1.1.1.2 Voce atravessa um rio, em uma velocidade que eles nunca viram em um humamano, não deixando opções de perseguição.o tempo passa, o dia vai sumindo e a noite aparecendo. Ao longe voce observa algumas silhuetas quadrupedes correndo depressa em sua direção."Essa não, devem ser lobos". Voce começa a correr, mas não tem cidade ou abrigo a vista. Voce procura algo para se defender, mas so encontra galhos secos. As criaturas estão proximas, voce nota que não são lobos e sim criaturas grotescas, com garras enormes e sem pelo, do tamanho de um humano adulto. Voce lembra do aviso do guia da carroça e se arrepende de não o ter escutado. Voce pega um pedaço de madeira do chão e desfere um golpe contra a primeira besta, mas sua pele era tão dura que quebrou o pedaço no primeiro golpe. Sem arma voce se ve em uma situação onde so se pode aceitar seu destino e se arrepender de sua escolha.
+Voce atravessa um rio, em uma velocidade que eles nunca viram em um humamano, não deixando opções de perseguição.o tempo passa, o dia vai sumindo e a noite aparecendo. Ao longe voce observa algumas silhuetas quadrupedes correndo depressa em sua direção."Essa não, devem ser lobos". Voce começa a correr, mas não tem cidade ou abrigo a vista. Voce procura algo para se defender, mas so encontra galhos secos. As criaturas estão proximas, voce nota que não são lobos e sim criaturas grotescas, com garras enormes e sem pelo, do tamanho de um humano adulto. Voce lembra do aviso do guia da carroça e se arrepende de não o ter escutado. Voce pega um pedaço de madeira do chão e desfere um golpe contra a primeira besta, mas sua pele era tão dura que quebrou o pedaço no primeiro golpe. Sem arma voce se ve em uma situação onde so se pode aceitar seu destino e se arrepender de sua escolha.
 
-1.1.1.1 Você segue seu rumo sem entender o que esta acontecendo direito. Chegando na cidade vc nota os portões completamente protegidos, varios soldados fazendo ronda e um grande controle de quem entra e sai. Os guardas começam a checar a carroça para ver se tem algo suspeito. Um deles olha para a sua cara com um olhar de surpresa “alto!!” gritou ele apontando uma lança para a sua direção, os outros guardas ouvindo a comoção se juntaram na ação” saiam imediatamente dessa carroça, ou iremos atacar”. Você sai junto com os outros. “ceifador rubro você esta preso, por seus crimes contra o império humano, se renda agora”- Gritou o primeiro guarda, no momento que todos apontaram as lanças para você.
+Você segue seu rumo sem entender o que esta acontecendo direito. Chegando na cidade vc nota os portões completamente protegidos, varios soldados fazendo ronda e um grande controle de quem entra e sai. Os guardas começam a checar a carroça para ver se tem algo suspeito. Um deles olha para a sua cara com um olhar de surpresa “alto!!” gritou ele apontando uma lança para a sua direção, os outros guardas ouvindo a comoção se juntaram na ação” saiam imediatamente dessa carroça, ou iremos atacar”. Você sai junto com os outros. “ceifador rubro você esta preso, por seus crimes contra o império humano, se renda agora”- Gritou o primeiro guarda, no momento que todos apontaram as lanças para você.
 
-1.1.1.1.1-Se render passificamente.
-1.1.1.1.2-Lutar por sua liberdade.
+1-Se render passificamente.
+2-Lutar por sua liberdade.
 
-1.1.1.1.2- Voce investe no primeiro guarda o derrubando, mas quase que no mesmo momento outro guarda te acerta com a lança, voce tenta fugir mas outros guardas te cercam e atacam ao mesmo tempo te levando a obito.
+Voce investe no primeiro guarda o derrubando, mas quase que no mesmo momento outro guarda te acerta com a lança, voce tenta fugir mas outros guardas te cercam e atacam ao mesmo tempo te levando a obito.
 
-1.1.1.1.1 Voce é algemado e levado por 3 guardas, para dentro da cidade, em uma casa grande colada na muralha (parecia ser algum posto de comando). La voce encontra uma mulher com uma armadura pesada, alguns emblemas em suas ombreiras e uma cicatriz que atravessava da testa para a bochecha sem encostar no olho. Ela estava observando um mapa em cima de uma mesa, ate voces entrarem na sala e chamarem a atenção dela “comandante te trouxemos um presente”. “Ora ora, o que temos aqui, alguem veio se entregar de bom grado? O que houve? Cansou de lutar e largou seu povo?” (“meu povo? Do que ela esta falando”)Me desculpe, mas eu não sei do que você esta falando. Eu acordei na floresta e não consigo me lembrar de nada, o que voce quer dizer com meu povo? Voces não são o meu povo? Voces podem me dizer quem eu sou?” A mulher se aproxima, cruzando os braços.
+Voce é algemado e levado por 3 guardas, para dentro da cidade, em uma casa grande colada na muralha (parecia ser algum posto de comando). La voce encontra uma mulher com uma armadura pesada, alguns emblemas em suas ombreiras e uma cicatriz que atravessava da testa para a bochecha sem encostar no olho. Ela estava observando um mapa em cima de uma mesa, ate voces entrarem na sala e chamarem a atenção dela “comandante te trouxemos um presente”. “Ora ora, o que temos aqui, alguem veio se entregar de bom grado? O que houve? Cansou de lutar e largou seu povo?” (“meu povo? Do que ela esta falando”)Me desculpe, mas eu não sei do que você esta falando. Eu acordei na floresta e não consigo me lembrar de nada, o que voce quer dizer com meu povo? Voces não são o meu povo? Voces podem me dizer quem eu sou?” A mulher se aproxima, cruzando os braços.
 ”Voce quer mesmo fingir que não se lembra? Logo voce o comandante escarlate dos elfos carmesins... ou ceifador rubro, como te chamamos por aqui.”
 Ela puxa um livro de registros e joga sobre a mesa. Imagens, nomes e datas. Você vê uma imagemde um homem liderando um grupo de soldados com roupas verdes, cabelos vermelhos, olhos pretos com pupilas vermelhas e orelhas pontudas. A comandante começa a falar em uma língua estranha , a mão dela começa a brilhar e aponta para você. No mesmo instante seu cabelo muda de cor para um tom vermelho, sua orelha começa a ficar maior e pontuda. A comandante pega um espelho e aponta para você. O homem na imagem era você.
 
@@ -44,45 +44,45 @@ Voce é Talianr, ex comandante dos elfos carmesins, inimigo dos humanos, traidor
 
 Voce se vê com duas opçoes:
 
-1.1.1.1.1.1- Cooperar com os humanos e dizer toda a verdade.
-1.1.1.1.1.2- Cooperar com os humanos mas não contar toda a verdade.
+1- Cooperar com os humanos e dizer toda a verdade.
+2- Cooperar com os humanos mas não contar toda a verdade.
  
-1.1.1.1.1.2 Voce fala que não estava mais aguentando essa guerra e a maldade que os elfos estavam fazendo, então descidiu fugir do exercito e se juntar aos humanos para acabar com a guerra. A comandante desfere um soco contra voce. Comandante- "Voce acha que eu sou idiota? Voce quer que eu acredite que do nada voce teve uma crise de conciencia e decidiu trair seu povo para nos ajudar? Guardas prendam ele. Amanhã o enforcaermos. Talian -"Espera eu conto o resto". Comandante- " Voce teve sua chance, não posso confiar em voce".
-1.1.1.1.1.1 Voce revela tudo: o feitiço, a pedra, os elfos corrompidos e a fuga desesperada.
+Voce fala que não estava mais aguentando essa guerra e a maldade que os elfos estavam fazendo, então descidiu fugir do exercito e se juntar aos humanos para acabar com a guerra. A comandante desfere um soco contra voce. Comandante- "Voce acha que eu sou idiota? Voce quer que eu acredite que do nada voce teve uma crise de conciencia e decidiu trair seu povo para nos ajudar? Guardas prendam ele. Amanhã o enforcaermos. Talian -"Espera eu conto o resto". Comandante- " Voce teve sua chance, não posso confiar em voce".
+Voce revela tudo: o feitiço, a pedra, os elfos corrompidos e a fuga desesperada.
 “Se isso for verdade, então estamos diante de algo maior do que pensavamos. Mas voce ainda é um criminoso e eu não posso confiar completamente em você”. Ela faz um gesto para o guardae diz:
 
 ”Nos temos duas opções com você: ou é enforcado amanhã, como manda a lei... ou aceita ser enviado em uma missão para provar o que esta dizendo. Se falhar, morre. Se estiver falando a verdade, então salvaremos muitos.”
 
-1.1.1.1.1.1.1-Aceitar missão.
-1.1.1.1.1.1.2-Recusar e enfrentar a execução.
+1- Aceitar missão.
+2- Recusar e enfrentar a execução.
 
-1.1.1.1.1.1.2 Comandante- "então está decidido. Eu vou gostar muito de ver isso. Guardas levem ele daqui."
+Comandante- "então está decidido. Eu vou gostar muito de ver isso. Guardas levem ele daqui."
 
-1.1.1.1.1.1.1 Você aceita e pergunta:
+Você aceita e pergunta:
 	Talian- “E quem vai comigo para ver se eu estou mentido ou não? Vai colocar seus soldados para me testar?”
 	Comandante- “Sim, mas eu  vou junto, não irei colocar a vida de meus soldados em risco por um palpite meu, sem colocar a minha vida em jogo tambem. No momento que eu 	desconfiar que 	esta mentindo, eu te mato”
 Então voces partem para a missão com um grupo de 7 contando com voce e a comandante.
 Durante a viajem, voces se deparam com as tais criaturas criadas pelos elfos, elas são como animais selvagens, sem inteligencia que ataca tudo que se move. Mas como eles não estavam em bando e sem alguem os comandando, elas acabaram sendo derrotadas facilmente com a habilidade incrivel da comandante e com a sua técnica com adagas. Ao se aproximar do forte dos elfos, voce se ve na escolha de dois caminhos:
 
-1.1.1.1.1.1.1.1 guiar pelo caminho mais sorrateiro, entre as arvores.
-1.1.1.1.1.1.1.2 Ir pela rota principal para cheagar mais rapido.
+1- guiar pelo caminho mais sorrateiro, entre as arvores.
+2- Ir pela rota principal para cheagar mais rapido.
 
-1.1.1.1.1.1.1.2 Voce e seu grupo encontram criaturas na rota principal. Elas investem na direção do seu grupo iniciando um combate. Seu grupo é bem estruturado e habilidoso. Mesmo com as criatura sejam fortes, elas não passam de bestas descontroladas. Quando voce sente que o combate esta ganho uma chuva de flechas vem do meio da floresta (foram encontrados pelos elfos) e acerta a comandante e seus aliados, no momento de vacilo uma das criaturas ataca pelas suas costas, não te deixando nenhuma opção de reação.
+Voce e seu grupo encontram criaturas na rota principal. Elas investem na direção do seu grupo iniciando um combate. Seu grupo é bem estruturado e habilidoso. Mesmo com as criatura sejam fortes, elas não passam de bestas descontroladas. Quando voce sente que o combate esta ganho uma chuva de flechas vem do meio da floresta (foram encontrados pelos elfos) e acerta a comandante e seus aliados, no momento de vacilo uma das criaturas ataca pelas suas costas, não te deixando nenhuma opção de reação.
 
-1.1.1.1.1.1.1.1 Voces passam entre as arvores evitando as armadilhas colocadas pelos elfos e chegam em uma passagem de esgoto do forte onde tinha uma porta trancada por magia, mas como tinham um ex comandante em seu grupo, o contra-feitiço não foi algo dificl de descobrir. Voces conseguem entrar e passar o mais sileciosamente possivel evitando as rondas dos guardas com a ajuda de Talian que sabia todos os horarios de rondas e por onde passavam. Eles enfim encontraram a sala do pergaminho, porem ela estava sendo vigiada por dois guardas.
+Voces passam entre as arvores evitando as armadilhas colocadas pelos elfos e chegam em uma passagem de esgoto do forte onde tinha uma porta trancada por magia, mas como tinham um ex comandante em seu grupo, o contra-feitiço não foi algo dificl de descobrir. Voces conseguem entrar e passar o mais sileciosamente possivel evitando as rondas dos guardas com a ajuda de Talian que sabia todos os horarios de rondas e por onde passavam. Eles enfim encontraram a sala do pergaminho, porem ela estava sendo vigiada por dois guardas.
 
-1.1.1.1.1.1.1.1.1 perguntar se a comandante tinha um plano
-1.1.1.1.1.1.1.1.2 Aparecer e confrontar os guardas.
+1- perguntar se a comandante tinha um plano
+2- Aparecer e confrontar os guardas.
 
-1.1.1.1.1.1.1.1.2 dois aliado aparecem com arcos carregados, o primeiro disparo acerta em cheio em um local fatal, ja o segundo acerta o braço do outro guarda, dando espaço para soar o sinal. Em segundos o corredor estava cheio de guardas e voce estava em um combate impossivel vendo os seu companheiros cairem 1 por 1, ate que voce se ver sozinho não restando escolha a não se juntar a eles
-1.1.1.1.1.1.1.1.1 Ela veio completamente preparada, ela continha uma pedra com uma runa que ao ativar cancelava todo o ruido dentro de um certo alcance. Então eles lançaram essa runa na direção dos guardas e lançaram um ataque rapido e fatal. Antes que a runa perdece o efeito eles despiram os guardas e vestiram 2 soldados do grupo para fazer uma falsa vigia na porta, para não chamar atenção de quem passasse. Ao entrar na sala o grupo fica horrorizado com o ambiente, varios testes de criação de monstros jogados pelo chão e uma criatura dentro de um recipiente imenso, (aquilo não estava la da ultima vez) ela era bem maior que as outras. Estava na hora de destruir o local de criação, mas no momento eles escultam dois gritos na porta. Um silencio toma conta do local, ate que a porta abre e aparece um ancião junto com 4 criaturas. 
+dois aliado aparecem com arcos carregados, o primeiro disparo acerta em cheio em um local fatal, ja o segundo acerta o braço do outro guarda, dando espaço para soar o sinal. Em segundos o corredor estava cheio de guardas e voce estava em um combate impossivel vendo os seu companheiros cairem 1 por 1, ate que voce se ver sozinho não restando escolha a não se juntar a eles
+Ela veio completamente preparada, ela continha uma pedra com uma runa que ao ativar cancelava todo o ruido dentro de um certo alcance. Então eles lançaram essa runa na direção dos guardas e lançaram um ataque rapido e fatal. Antes que a runa perdece o efeito eles despiram os guardas e vestiram 2 soldados do grupo para fazer uma falsa vigia na porta, para não chamar atenção de quem passasse. Ao entrar na sala o grupo fica horrorizado com o ambiente, varios testes de criação de monstros jogados pelo chão e uma criatura dentro de um recipiente imenso, (aquilo não estava la da ultima vez) ela era bem maior que as outras. Estava na hora de destruir o local de criação, mas no momento eles escultam dois gritos na porta. Um silencio toma conta do local, ate que a porta abre e aparece um ancião junto com 4 criaturas. 
 “Elas sentiram um cheiro diferente, voces acham que apenas mudar de roupa vai enganar o faro delas?” Ele começa a entonar um feitiço enquanto as criaturas partem para cima dos 5 restantes do grupo, as bestas se tornam diferentes quando são comandadas, elas atacam com estrategia e não como feras irracionais. Mas ainda assim a habilidade do grupo, principalmente de Talion e da comandante foram o suficiente pra subjulgar as criaturas. Porem foi tempo o suficiente para o ancião terminar o feitiço e acordar a enorme criatura atras deles. Um dos soldados desferiu um golpe na barriga da criatura, mas a espada não afundou o bastante, a pele era muito dura. Então a criatura desferiu apenas um golpe, foi o suficiente para tirar a vida do soldado. Agora o grupo se viu encurralado.
 
-1.1.1.1.1.1.1.1.1.1- utilizar a feitiço que foi gravado na pele, para tentar parar a criatura
-1.1.1.1.1.1.1.1.1.2- Atacar em conjunto para derrubar a criatura.
+1- utilizar a feitiço que foi gravado na pele, para tentar parar a criatura
+2- Atacar em conjunto para derrubar a criatura.
 
-1.1.1.1.1.1.1.1.1.2 Voces atacam juntos. A criatura pega um dos aliados e bate contra o chão não deixando opção de vida. Nesss momento todos os outros ficam suas espadas nas juntas das pernas e braços para imobilizar a besta. Voce vê a oportunidade perfeita para investir contra a cabeça da critura, vc salta e no momento do impacto surge um braço da boca da criatura te agarrando pela garganta. Seus aliados notam que a criatura esta regenerando dos ataques nas juntas, jogando dois dos guardas pra longe e te esmagando contra a parede.
-1.1.1.1.1.1.1.1.1.1 Funcionou, a besta parou, mas em conjunto voce sente uma energia estranha invadindo a sua mente, uma fome e furia entrando em seu corpo. Talvez ele esteja se conectando a criatura
+Voces atacam juntos. A criatura pega um dos aliados e bate contra o chão não deixando opção de vida. Nesss momento todos os outros ficam suas espadas nas juntas das pernas e braços para imobilizar a besta. Voce vê a oportunidade perfeita para investir contra a cabeça da critura, vc salta e no momento do impacto surge um braço da boca da criatura te agarrando pela garganta. Seus aliados notam que a criatura esta regenerando dos ataques nas juntas, jogando dois dos guardas pra longe e te esmagando contra a parede.
+Funcionou, a besta parou, mas em conjunto voce sente uma energia estranha invadindo a sua mente, uma fome e furia entrando em seu corpo. Talvez ele esteja se conectando a criatura
 
 O ancião olha incredulo
 “Como voce fez isso? Voce ousa roubar minha criatura? Depois de nos trair voce se vira contra nos?”
@@ -94,10 +94,10 @@ Talian sente a criatura o reconhecendo como mestre. A energia que os conecta pul
 A comandante observa com olhos atentos.
 “Essa ligação... ela é perigosa, não é? Está te consumindo?”
 
-1.1.1.1.1.1.1.1.1.1.1- resistir
-1.1.1.1.1.1.1.1.1.1.2- ceder ao poder
+1- resistir
+2- ceder ao poder
 
-1.1.1.1.1.1.1.1.1.1.2 Talian encara a criatura imóvel, subjugada pelo feitiço. Ele sorri de lado.
+Talian encara a criatura imóvel, subjugada pelo feitiço. Ele sorri de lado.
 — “Ela me obedece. Mas a conexão é instável. Pode me corromper, sim. Mas… e se eu aprender a controlar isso?”
 A comandante aperta os olhos. — “Você pretende usar essa coisa?”
 — “Não é apenas uma coisa… é uma arma. Uma chance.”
@@ -110,7 +110,7 @@ Outros juram que o viram sorrindo enquanto viam os terrores da guerra… quando 
 E então um novo título começa a ecoar pelas tavernas:
 “O Senhor das Feras”.
 
-1.1.1.1.1.1.1.1.1.1.1 Talian encara a criatura, ainda paralisada sob o feitiço marcado em sua pele. Ele sente a fúria latente dentro de si — viva, crescente, prestes a dominá-lo.
+Talian encara a criatura, ainda paralisada sob o feitiço marcado em sua pele. Ele sente a fúria latente dentro de si — viva, crescente, prestes a dominá-lo.
 Ele respira fundo, decidido.
 — “Se eu continuar ligado a essa coisa... não serei mais eu. Preciso destruir isso”
 A comandante observa em silêncio. Mas quando ele dá um passo para longe, ela fala — firme, mas com algo novo no tom.
@@ -128,22 +128,22 @@ Mas o nome dele ecoa por todos os reinos:
 “Talian, o Ceifador que recusou o trono da destruição.”
 
 
-2 O frio aumenta conforme você caminha. A luz some quase por completo. O silêncio é cortado apenas pelo som suave da brisa e o eco de uma voz serena, feminina e distante.
+O frio aumenta conforme você caminha. A luz some quase por completo. O silêncio é cortado apenas pelo som suave da brisa e o eco de uma voz serena, feminina e distante.
 — “Mais perto… mais um passo. Eu posso te mostrar quem você é de verdade…”
 Você sente que está sendo observado. Mas também sente… segurança. É estranho. Como se algo ali reconhecesse você.
 Você segue até encontrar uma clareira onde uma luz azul-clara brilha no centro. Lá, está uma criatura majestosa, com escamas reluzentes como cristal e olhos profundos como o céu noturno. Ela possui feições dracônicas, mas sua forma é elegante e etérea — claramente de outro mundo.
 (ser desconhecido)— “Você finalmente chegou, Talian.”
-— “Você me conhece? Quem… ou o que é você?”
+Talian— “Você me conhece? Quem… ou o que é você?”
 Ela sorri com tristeza nos olhos.
 Zakyra— “Sou chamada de Zakyra, e sou a última das Guardiãs de Elunarys — o mundo de onde a magia nasceu. Mas minha energia está se esvaindo... e este mundo está à beira do colapso.”
-— “O que está acontecendo?”
-— “A magia corrompida que corre entre os elfos carmesins não pertence a este mundo. Ela foi tirada à força de minha terra... manipulada, distorcida. E agora, ela está se espalhando. Se nada for feito... todos os seres vivos serão consumidos.”
+Talian— “O que está acontecendo?”
+Zakyra— “A magia corrompida que corre entre os elfos carmesins não pertence a este mundo. Ela foi tirada à força de minha terra... manipulada, distorcida. E agora, ela está se espalhando. Se nada for feito... todos os seres vivos serão consumidos.”
 Ela se aproxima e encosta o focinho em sua testa. Uma enxurrada de memórias entra em sua mente: imagens de um mundo cristalino, harmônico, onde a magia fluía livre como ar. Você vê um pergaminho negro... um elfo traindo os pactos antigos... monstros nascendo da fusão da vida com magia sombria.
 “Esse era o verdadeiro plano dos elfos corrompidos.”
-— “E você, Talian… você foi escolhido por mim. Para impedir o fim.”
+Zakyra— “E você, Talian… você foi escolhido por mim. Para impedir o fim.”
 Ela invoca um núcleo mágico flutuante em forma de cristal azul.
-— “Aceite isso, e meu poder será seu. Você terá acesso às verdadeiras magias de Elunarys: cura absoluta, magia elemental pura, selos espirituais, e… a conexão com a própria natureza viva.”
-— “Mas cuidado: quanto mais poder receber, mais perto da ruína você pode chegar. Este presente exige equilíbrio.”
+Zakyra— “Aceite isso, e meu poder será seu. Você terá acesso às verdadeiras magias de Elunarys: cura absoluta, magia elemental pura, selos espirituais, e… a conexão com a própria natureza viva.”
+Zakyra— “Mas cuidado: quanto mais poder receber, mais perto da ruína você pode chegar. Este presente exige equilíbrio.”
 Você sente uma força pulsando dentro de si. Sua pele aquece, seus olhos brilham levemente. Um novo poder nasce — diferente da magia negra dos elfos.
 Ela mostra que Talian foi escolhido por ser o elo perdido — o único com sangue misto capaz de dominar ambas as forças.
 Mas para que ele possa selar a corrupção, precisará restaurar os três Pilares da Natureza Viva:
@@ -165,14 +165,14 @@ No centro da floresta, existe um Templo vivo: uma estrutura de raízes e cipós,
 Mas a paz é falsa.
 A floresta está em desequilíbrio. Plantas crescem demais, devoram vilarejos próximos, e criaturas da floresta enlouqueceram. Algo corrompeu o Pilar da Vida.
 Ao se aproximar do templo, Talian vê uma figura amarrada por raízes negras: Erielle, a Protetora da Floresta, um antigo espírito natural com forma elfa e olhos que brilham como esmeralda líquida.
-— “Eu… fui traída… pela minha própria criação… Eles usaram meu sangue para alimentar a magia corrupta…”
+Erielle— “Eu… fui traída… pela minha própria criação… Eles usaram meu sangue para alimentar a magia corrupta…”
 Ela está sendo drenada, presa entre a magia sombria dos elfos carmesins e a natural de Elunarys.
 O cristal começa a brilhar fortemente: a primeira escolha importante se aproxima.
 
-2.1 – Purificar Erielle usando parte da sua essência mágica.
-2.2 - Eliminar Erielle para cortar a conexão com a corrupção.  (Convergencia)
+1 – Purificar Erielle usando parte da sua essência mágica.
+2 - Eliminar Erielle para cortar a conexão com a corrupção.  (Convergencia)
 
-2.1 Talian concentra o cristal em sua palma, sussurra o nome que ouviu de Zakyra e invoca a Magia de Harmonia.
+Talian concentra o cristal em sua palma, sussurra o nome que ouviu de Zakyra e invoca a Magia de Harmonia.
 Raízes puras brotam do chão, envolvem as negras, e lentamente removem a corrupção do corpo de Erielle.
 Mas o custo é alto: a pele de Talian começa a queimar com marcas vivas, como veias de energia mágica.
 Erielle, ao acordar, sussurra:
@@ -199,10 +199,10 @@ Vê o rosto da comandante humana, ferida, mas poupando vidas.
 “A verdade não é um fardo leve… Está pronto para carregá-la, Talian?”
 O que você ira fazer?
 
-2.1.1 – Permanecer nas memórias e aceitar sua culpa.
-2.1.2 – Tentar apagar as visões com magia.
+1 – Permanecer nas memórias e aceitar sua culpa.
+2 – Tentar apagar as visões com magia.
 
-2.1.2 Talian tenta cortar a ligação com o cristal — ele não quer ver mais.
+Talian tenta cortar a ligação com o cristal — ele não quer ver mais.
 Mas isso desrespeita o pacto da Terra, que exige aceitação e firmeza.
 O chão treme. Um eco de si mesmo, uma versão distorcida — o “Velho Talian” — surge para enfrentá-lo.
 Combate ocorre. Mesmo vencendo, Talian é gravemente ferido.
@@ -210,7 +210,7 @@ O golem que deveria ser um aliado o vê como indigno e o ataca por trás, esmaga
 Você morreu.
 “A terra não perdoa os que tentam enterrar a verdade.”
 
-2.1.1 Talian se ajoelha diante das visões. Ele não tenta apagar, justificar ou ignorar o que vê. Ele reconhece sua responsabilidade, mesmo que não lembrasse conscientemente.
+Talian se ajoelha diante das visões. Ele não tenta apagar, justificar ou ignorar o que vê. Ele reconhece sua responsabilidade, mesmo que não lembrasse conscientemente.
 As pedras à sua volta se acalmam. Um golem surge do chão — feito de argila mágica com símbolos vivos — e se curva diante dele.
 Golem:
 “Aqueles que aceitam o peso da terra… têm o direito de moldá-la.”
@@ -240,10 +240,10 @@ Ele está envolto em uma armadura viva feita de uma criatura grotesca, com os ol
 “Você pode negar, mas eu sou parte de você. A dor. A fúria. A sede de justiça. Você me criou.”
 O cristal pulsa. A luta interior se aproxima.
 
-2.1.1.1 – Encarar o Reflexo, sem tentar destruí-lo.
-2.1.1.2 – Atacar o Reflexo para destruí-lo.
+1 – Encarar o Reflexo, sem tentar destruí-lo.
+2 – Atacar o Reflexo para destruí-lo.
 
-2.1.1.2 Talian avança com tudo contra o reflexo.
+Talian avança com tudo contra o reflexo.
 A luta é violenta, mágica, brutal.
 Mas no plano espiritual, toda violência contra si mesmo se torna multiplicada.
 Cada golpe que ele acerta no reflexo... retorna para o seu corpo.
@@ -253,7 +253,7 @@ Mas... está cego.
 “Você tentou matar uma parte de si mesmo. E agora... ela está te matando aos poucos.”
 Você começa a sentir sua energia esvaindo. E a corrupção começará a tomar conta do cristal aos poucos.
 
-2.1.1.1 Talian não ergue a espada. Ele fala com o reflexo.
+Talian não ergue a espada. Ele fala com o reflexo.
 “Você carrega minha raiva. Mas também minha dor. Eu te reconheço. Mas não te obedeço.”
 O reflexo hesita. Ele grita, tenta atacar. Mas cada golpe que desfere se dissolve na água do plano espelhado.
 Talian então estende a mão.
@@ -284,10 +284,10 @@ Zakyra (em forma espiritual)
 Todos se unem a ele, formando um pequeno exército de protetores do equilíbrio.
 Ele precisa tomar uma decisão: como vai encarar essa guerra?
 
-2.1.1.1.1 – Dividir seu grupo e enfrentar cada inimigo separadamente.
-2.1.1.1.2 – Enfrentar os três de uma vez com todo o grupo reunido.
+1 – Dividir seu grupo e enfrentar cada inimigo separadamente.
+2 – Enfrentar os três de uma vez com todo o grupo reunido.
 
-2.1.1.1.2 Escolha impulsiva. O grupo ataca junto, mas os Sangrentos reagem com magia combinada.
+Escolha impulsiva. O grupo ataca junto, mas os Sangrentos reagem com magia combinada.
 Velzharn invoca uma criatura ancestral. Morgra com sua agilidade destrói o nucleo do golem. Kaelith explode parte do solo com sangue amaldiçoado.
 O resto do grupo luta bravamente, mas… Erielle morre ao proteger Talian da magia de sangue de Kaelith.
 Zakyra desaparece ao se sacrificar para conter Velzharn.
@@ -296,7 +296,7 @@ Morgra, surge como uma sombra e apunhala Talian pelas costas.
 Morgra- "você nos abandonou. Isso tudo para que? Virar um heroizinho? Olha onde isso te levou. Agora morra e veja la de cima os elfos conquistarem o mundo.
 Você sente sua vida esvaindo e seu caminho como Pilar da Paz... sendo destruido.
 
-2.1.1.1.1 Estratégia. Cada membro lida com um dos Sangrentos.
+Estratégia. Cada membro lida com um dos Sangrentos.
 Talian enfrenta Morgra, sua antiga companheira.
 O confronto é pessoal: ela o acusa de tê-la abandonado, de ter deixado o povo enfraquecer ao fugir da guerra.
 Mas ele responde:
@@ -330,10 +330,10 @@ Uma figura feita de energia negra toma forma: o Arquimago Élfico original, o cr
 O Orbe Harmônico começa a brilhar em azul e dourado, tentando neutralizar a Pedra — mas ela resiste.
 Talian entende que o selo só pode ser ativado com um catalisador: sua alma.
 
-2.1.1.1.1.1 – Sacrificar-se para selar a Pedra
-2.1.1.1.1.2 – Usar o Orbe para tentar selar a Pedra sem morrer
+1 – Sacrificar-se para selar a Pedra
+2 – Usar o Orbe para tentar selar a Pedra sem morrer
 
-2.1.1.1.1.2 Talian hesita. Ele tenta equilibrar o poder: manter a vida, selar a corrupção, salvar o mundo.
+Talian hesita. Ele tenta equilibrar o poder: manter a vida, selar a corrupção, salvar o mundo.
 Mas o feitiço original exige uma troca igual — e o Orbe, sozinho, não é suficiente.
 A Pedra puxa Talian, liberando uma onda de energia que purifica os elfos, mas consome uma grande área ao redor.
 O mundo é salvo, mas ninguém sabe exatamente como.
@@ -341,7 +341,7 @@ Talian é encontrado nos escombros petrificado.
 Anos depois, crianças brincam perto de sua estátua. Uma delas jura ter visto os olhos da estátua se moverem.
 Titulo: o salvador desconhecido.
 
-2.1.1.1.1.1 Talian ergue o Orbe, injeta nele sua energia vital e entra dentro do feitiço, como Sylvia havia previsto.
+Talian ergue o Orbe, injeta nele sua energia vital e entra dentro do feitiço, como Sylvia havia previsto.
 O orbe consome a pedra… e em vez de Talian ser consumido a alma de Talian absorve a pedra.
 Ele vira um conversor que transforma a magia sombria em Luz Viva, uma nova energia que se espalha pelos reinos.
 Zakyra em sua forma enfraquecida, pronuncia suas últimas palavras:
@@ -354,7 +354,7 @@ Titulo: pilar da paz.
 
 Convergencia 2.2
 
-2.2 Talian entende que Erielle está conectada à corrupção porque seu sangue foi usado. 
+Talian entende que Erielle está conectada à corrupção porque seu sangue foi usado. 
 Erielle está caída diante de Talian, seu corpo pulsando energia corrompida, gritando por dentro como se implorasse por ajuda.
 Mas Talian hesita apenas por um segundo…
 Então ergue sua lâmina.
@@ -385,14 +385,14 @@ Mas sua consciência ainda resiste.
 Mas as vozes em sua mente sussurram:
 “Ela é o último obstáculo. Elimine-a, e o Pilar será seu.”
 
-2.2.1 – Eliminar Zakyra
-2.2.2 – Tentar purificar Zakyra
+1 – Eliminar Zakyra
+2 – Tentar purificar Zakyra
 
-2.2.2 Você escolhe mostrar compaixão, Talian tenta usar o pouco da luz que resta em si. Ele abre o Coração de Sangue, forçando o cristal a reverter sua corrupção. A dor é intensa. O poder quase o consome.
+Você escolhe mostrar compaixão, Talian tenta usar o pouco da luz que resta em si. Ele abre o Coração de Sangue, forçando o cristal a reverter sua corrupção. A dor é intensa. O poder quase o consome.
 Mas Zakyra é salva.
 Porém, isso custa a vida de Talian.o cristal o matá por resistir à escuridão.
 
-2.2.1 Talian, já mergulhado demais em sua nova lógica, recusa a chance de redenção. Ele sabe que Zakyra é uma âncora — uma lembrança de quem ele foi.
+Talian, já mergulhado demais em sua nova lógica, recusa a chance de redenção. Ele sabe que Zakyra é uma âncora — uma lembrança de quem ele foi.
 “Você quer que eu lute por equilíbrio… Mas equilíbrio exige tempo. Eu não tenho mais tempo.”
 Ele conjura uma magia de colapso. Zakyra, fraca, resiste, tenta lutar com feitiços antigos… mas não é páreo.
 Talian a destrói. E com isso, o Pilar de Kurh-Gorr colapsa em ruína.
@@ -445,15 +445,15 @@ Eredan:
 “Você me salvou, uma vez… quando ainda era o Comandante Carmesim. Você ainda está aí dentro?”
 Talian (com os olhos brilhando em violeta e vermelho):
 
-2.2.1.1 – Enfrentar Eredan e destruir o Pilar
+1 – Enfrentar Eredan e destruir o Pilar
 
-2.2.1.2 – Hesitar diante de Eredan
+2 – Hesitar diante de Eredan
 
 
-2.2.1.2 Eredan invoca o Tri-Selo das Raças, um último recurso que usa as energias de humanos, elfos e espíritos para aprisionar ou obliterar qualquer anomalia.
+Eredan invoca o Tri-Selo das Raças, um último recurso que usa as energias de humanos, elfos e espíritos para aprisionar ou obliterar qualquer anomalia.
 O ceifador hesita em revidar Eredan, Talian é subjugado pelo selo dos três reinos, selado em uma prisão de pedra viva para a eternidade. O mundo sobrevive, mas corrompido, desequilibrado e dividido — sem paz, mas sem o Ceifador.
 
-2.2.1.1 “Aquele Talian morreu quando descobriu que sua compaixão era fraqueza.
+“Aquele Talian morreu quando descobriu que sua compaixão era fraqueza.
 O que sobrou é o necessário.”
 Eredan invoca o Tri-Selo das Raças, um último recurso que usa as energias de humanos, elfos e espíritos para aprisionar ou obliterar qualquer anomalia.
 Mas Talian, ao invés de resistir, absorve o selo.
